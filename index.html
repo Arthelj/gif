@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GifTastic</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="contentContainer">
+        <div id="header">GifTastic</div>
+        <form>
+            <h2 id="titleHeader">Add a Gif: <input type="text" for="addButton" id="buttonContent"> <button type="button" id="addButton">Add Item</button></h2>
+            <section id="gifChoiceContainer">
+                <h2>Select your choice. </h2>
+            </section>
+            <section id="labelContainer">
+                <label for="limit">How many: </label>
+                <select id="limit">
+                    <option value=1>1</option>
+                    <option value=5>5</option>
+                    <option value=10>10</option>
+                    <option value=25 selected>25</option>
+                    <option value=50>50</option>
+                    <option value=100>100</option>
+                </select>
+            </section>
+            <section id="buttonContainer">
+                <button type="button" id="searchButton">Search</button>
+                <button type="button" id="resetButton">Clear Gifs</button>
+            </section>
+        </form>
+        <div id="placeForClickedGifs"></div>
+        <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/js/giphy.js"></script>
+</body>
+
+</html>
